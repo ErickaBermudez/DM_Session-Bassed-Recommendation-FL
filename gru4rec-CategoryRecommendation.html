@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>gru4recBidirectional-ItemRecommendation</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>gru4rec-CategoryRecommendation</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -14815,7 +14815,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">tail</span><span class="p">()</span>
@@ -14836,7 +14836,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
 
 
 
@@ -14936,22 +14936,6 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_val</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Session_ID&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">500000</span><span class="p">]</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -14968,7 +14952,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_val</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Session_ID&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">800000</span><span class="p">]</span>
@@ -14990,7 +14974,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
 
 
 
@@ -15010,7 +14994,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_train</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Session_ID&#39;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">800000</span><span class="p">]</span>
@@ -15032,7 +15016,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
 
 
 
@@ -15052,11 +15036,11 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Dataset</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="n">session_key</span><span class="o">=</span><span class="s1">&#39;Session_ID&#39;</span><span class="p">,</span> <span class="n">item_key</span><span class="o">=</span><span class="s1">&#39;sku&#39;</span><span class="p">,</span> <span class="n">time_key</span><span class="o">=</span><span class="s1">&#39;Seq&#39;</span><span class="p">,</span> <span class="n">n_sample</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">itemmap</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">itemstamp</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">time_sort</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="n">session_key</span><span class="o">=</span><span class="s1">&#39;Session_ID&#39;</span><span class="p">,</span> <span class="n">item_key</span><span class="o">=</span><span class="s1">&#39;category&#39;</span><span class="p">,</span> <span class="n">time_key</span><span class="o">=</span><span class="s1">&#39;Seq&#39;</span><span class="p">,</span> <span class="n">n_sample</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">itemmap</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">itemstamp</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">time_sort</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
         <span class="c1"># Read csv</span>
         <span class="c1">#self.df = pd.read_csv(path, sep=sep, dtype={session_key: int, item_key: int, time_key: float})</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">df</span> <span class="o">=</span> <span class="n">path</span>
@@ -15127,7 +15111,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">DataLoader</span><span class="p">():</span>
@@ -15200,7 +15184,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">train_data</span> <span class="o">=</span> <span class="n">Dataset</span><span class="p">(</span><span class="n">df_train</span><span class="p">)</span>
@@ -15217,7 +15201,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">GRU4REC</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
@@ -15345,11 +15329,11 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">input_size</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">train_data</span><span class="o">.</span><span class="n">items</span><span class="p">)</span>
-<span class="n">hidden_size</span> <span class="o">=</span> <span class="mi">1000</span>
+<span class="n">hidden_size</span> <span class="o">=</span> <span class="mi">100</span>
 <span class="n">num_layers</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="n">output_size</span> <span class="o">=</span> <span class="n">input_size</span>
 <span class="n">batch_size</span> <span class="o">=</span> <span class="mi">64</span>
@@ -15359,7 +15343,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <span class="n">final_act</span> <span class="o">=</span> <span class="s1">&#39;tanh&#39;</span>
 <span class="n">loss_type</span> <span class="o">=</span> <span class="s1">&#39;TOP1-max&#39;</span>
 <span class="n">optimizer_type</span> <span class="o">=</span> <span class="s1">&#39;Adagrad&#39;</span>
-<span class="n">lr</span> <span class="o">=</span> <span class="mf">0.01</span>
+<span class="n">lr</span> <span class="o">=</span> <span class="mf">0.05</span>
 <span class="n">weight_decay</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="n">momentum</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="n">eps</span> <span class="o">=</span> <span class="mf">1e-6</span>
@@ -15378,7 +15362,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">input_size</span>
@@ -15399,13 +15383,13 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[15]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[13]:</div>
 
 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>103915</pre>
+<pre>87</pre>
 </div>
 
 </div>
@@ -15419,7 +15403,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">cuda</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">is_available</span><span class="p">()</span>
@@ -15436,7 +15420,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">seed</span> <span class="o">=</span> <span class="mi">0</span>
@@ -15454,80 +15438,19 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">LossFunction</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">loss_type</span><span class="o">=</span><span class="s1">&#39;TOP1&#39;</span><span class="p">,</span> <span class="n">use_cuda</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot; An abstract loss function that can supports custom loss functions compatible with PyTorch.&quot;&quot;&quot;</span>
-        <span class="nb">super</span><span class="p">(</span><span class="n">LossFunction</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">loss_type</span> <span class="o">=</span> <span class="n">loss_type</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">use_cuda</span> <span class="o">=</span> <span class="n">use_cuda</span>
-        <span class="k">if</span> <span class="n">loss_type</span> <span class="o">==</span> <span class="s1">&#39;CrossEntropy&#39;</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">_loss_fn</span> <span class="o">=</span> <span class="n">SampledCrossEntropyLoss</span><span class="p">(</span><span class="n">use_cuda</span><span class="p">)</span>
-        <span class="k">elif</span> <span class="n">loss_type</span> <span class="o">==</span> <span class="s1">&#39;TOP1&#39;</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">_loss_fn</span> <span class="o">=</span> <span class="n">TOP1Loss</span><span class="p">()</span>
-        <span class="k">elif</span> <span class="n">loss_type</span> <span class="o">==</span> <span class="s1">&#39;BPR&#39;</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">_loss_fn</span> <span class="o">=</span> <span class="n">BPRLoss</span><span class="p">()</span>
-        <span class="k">elif</span> <span class="n">loss_type</span> <span class="o">==</span> <span class="s1">&#39;TOP1-max&#39;</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">_loss_fn</span> <span class="o">=</span> <span class="n">TOP1_max</span><span class="p">()</span>
-        <span class="k">elif</span> <span class="n">loss_type</span> <span class="o">==</span> <span class="s1">&#39;BPR-max&#39;</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">_loss_fn</span> <span class="o">=</span> <span class="n">BPR_max</span><span class="p">()</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="k">raise</span> <span class="ne">NotImplementedError</span>
-
-    <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">logit</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_loss_fn</span><span class="p">(</span><span class="n">logit</span><span class="p">)</span>
-
-
-<span class="k">class</span> <span class="nc">SampledCrossEntropyLoss</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot; CrossEntropyLoss with n_classes = batch_size = the number of samples in the session-parallel mini-batch &quot;&quot;&quot;</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">use_cuda</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">        Args:</span>
-<span class="sd">             use_cuda (bool): whether to use cuda or not</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="nb">super</span><span class="p">(</span><span class="n">SampledCrossEntropyLoss</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">xe_loss</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">CrossEntropyLoss</span><span class="p">()</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">use_cuda</span> <span class="o">=</span> <span class="n">use_cuda</span>
-
-    <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">logit</span><span class="p">):</span>
-        <span class="n">batch_size</span> <span class="o">=</span> <span class="n">logit</span><span class="o">.</span><span class="n">size</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-        <span class="n">target</span> <span class="o">=</span> <span class="n">Variable</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">batch_size</span><span class="p">)</span><span class="o">.</span><span class="n">long</span><span class="p">())</span>
-        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">use_cuda</span><span class="p">:</span>
-            <span class="n">target</span> <span class="o">=</span> <span class="n">target</span><span class="o">.</span><span class="n">cuda</span><span class="p">()</span>
-
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">xe_loss</span><span class="p">(</span><span class="n">logit</span><span class="p">,</span> <span class="n">target</span><span class="p">)</span>
-
-
-<span class="k">class</span> <span class="nc">BPRLoss</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">TOP1_max</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="nb">super</span><span class="p">(</span><span class="n">BPRLoss</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+        <span class="nb">super</span><span class="p">(</span><span class="n">TOP1_max</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
 
-    <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">logit</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">        Args:</span>
-<span class="sd">            logit (BxB): Variable that stores the logits for the items in the mini-batch</span>
-<span class="sd">                         The first dimension corresponds to the batches, and the second</span>
-<span class="sd">                         dimension corresponds to sampled number of items to evaluate</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="c1"># differences between the item scores</span>
-        <span class="n">diff</span> <span class="o">=</span> <span class="n">logit</span><span class="o">.</span><span class="n">diag</span><span class="p">()</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">expand_as</span><span class="p">(</span><span class="n">logit</span><span class="p">)</span> <span class="o">-</span> <span class="n">logit</span>
-        <span class="c1"># final loss</span>
-        <span class="n">loss</span> <span class="o">=</span> <span class="o">-</span><span class="n">torch</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">F</span><span class="o">.</span><span class="n">logsigmoid</span><span class="p">(</span><span class="n">diff</span><span class="p">))</span>
-        <span class="k">return</span> <span class="n">loss</span>
-
-
-<span class="k">class</span> <span class="nc">BPR_max</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="nb">super</span><span class="p">(</span><span class="n">BPR_max</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
     <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">logit</span><span class="p">):</span>
         <span class="n">logit_softmax</span> <span class="o">=</span> <span class="n">F</span><span class="o">.</span><span class="n">softmax</span><span class="p">(</span><span class="n">logit</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-        <span class="n">diff</span> <span class="o">=</span> <span class="n">logit</span><span class="o">.</span><span class="n">diag</span><span class="p">()</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">expand_as</span><span class="p">(</span><span class="n">logit</span><span class="p">)</span> <span class="o">-</span> <span class="n">logit</span>
-        <span class="n">loss</span> <span class="o">=</span> <span class="o">-</span><span class="n">torch</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">logit_softmax</span> <span class="o">*</span> <span class="n">torch</span><span class="o">.</span><span class="n">sigmoid</span><span class="p">(</span><span class="n">diff</span><span class="p">)))</span>
+        <span class="n">diff</span> <span class="o">=</span> <span class="o">-</span><span class="p">(</span><span class="n">logit</span><span class="o">.</span><span class="n">diag</span><span class="p">()</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">expand_as</span><span class="p">(</span><span class="n">logit</span><span class="p">)</span> <span class="o">-</span> <span class="n">logit</span><span class="p">)</span>
+        <span class="n">loss</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">logit_softmax</span> <span class="o">*</span> <span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">sigmoid</span><span class="p">(</span><span class="n">diff</span><span class="p">)</span> <span class="o">+</span> <span class="n">torch</span><span class="o">.</span><span class="n">sigmoid</span><span class="p">(</span><span class="n">logit</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)))</span>
         <span class="k">return</span> <span class="n">loss</span>
-
-
+    
 <span class="k">class</span> <span class="nc">TOP1Loss</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">(</span><span class="n">TOP1Loss</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
@@ -15540,18 +15463,23 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="n">diff</span> <span class="o">=</span> <span class="o">-</span><span class="p">(</span><span class="n">logit</span><span class="o">.</span><span class="n">diag</span><span class="p">()</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">expand_as</span><span class="p">(</span><span class="n">logit</span><span class="p">)</span> <span class="o">-</span> <span class="n">logit</span><span class="p">)</span>
         <span class="n">loss</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">sigmoid</span><span class="p">(</span><span class="n">diff</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="o">+</span> <span class="n">torch</span><span class="o">.</span><span class="n">sigmoid</span><span class="p">(</span><span class="n">logit</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
-        <span class="k">return</span> <span class="n">loss</span>
-
-
-<span class="k">class</span> <span class="nc">TOP1_max</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="nb">super</span><span class="p">(</span><span class="n">TOP1_max</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">loss</span>    
+    
+<span class="k">class</span> <span class="nc">LossFunction</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">loss_type</span><span class="o">=</span><span class="s1">&#39;TOP1&#39;</span><span class="p">,</span> <span class="n">use_cuda</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; An abstract loss function that can supports custom loss functions compatible with PyTorch.&quot;&quot;&quot;</span>
+        <span class="nb">super</span><span class="p">(</span><span class="n">LossFunction</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">loss_type</span> <span class="o">=</span> <span class="n">loss_type</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">use_cuda</span> <span class="o">=</span> <span class="n">use_cuda</span>
+        <span class="k">if</span> <span class="n">loss_type</span> <span class="o">==</span> <span class="s1">&#39;TOP1-max&#39;</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_loss_fn</span> <span class="o">=</span> <span class="n">TOP1_max</span><span class="p">()</span>
+        <span class="k">elif</span> <span class="n">loss_type</span> <span class="o">==</span> <span class="s1">&#39;TOP1&#39;</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_loss_fn</span> <span class="o">=</span> <span class="n">TOP1Loss</span><span class="p">()</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">NotImplementedError</span>
 
     <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">logit</span><span class="p">):</span>
-        <span class="n">logit_softmax</span> <span class="o">=</span> <span class="n">F</span><span class="o">.</span><span class="n">softmax</span><span class="p">(</span><span class="n">logit</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-        <span class="n">diff</span> <span class="o">=</span> <span class="o">-</span><span class="p">(</span><span class="n">logit</span><span class="o">.</span><span class="n">diag</span><span class="p">()</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">expand_as</span><span class="p">(</span><span class="n">logit</span><span class="p">)</span> <span class="o">-</span> <span class="n">logit</span><span class="p">)</span>
-        <span class="n">loss</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">logit_softmax</span> <span class="o">*</span> <span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">sigmoid</span><span class="p">(</span><span class="n">diff</span><span class="p">)</span> <span class="o">+</span> <span class="n">torch</span><span class="o">.</span><span class="n">sigmoid</span><span class="p">(</span><span class="n">logit</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)))</span>
-        <span class="k">return</span> <span class="n">loss</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_loss_fn</span><span class="p">(</span><span class="n">logit</span><span class="p">)</span> 
 </pre></div>
 
      </div>
@@ -15564,7 +15492,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">loss_function</span> <span class="o">=</span> <span class="n">LossFunction</span><span class="p">(</span><span class="n">loss_type</span><span class="o">=</span><span class="n">loss_type</span><span class="p">,</span> <span class="n">use_cuda</span><span class="o">=</span><span class="n">cuda</span><span class="p">)</span>
@@ -15591,7 +15519,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">GRU4REC</span><span class="p">(</span><span class="n">input_size</span><span class="p">,</span> <span class="n">hidden_size</span><span class="p">,</span> <span class="n">output_size</span><span class="p">,</span> <span class="n">final_act</span><span class="o">=</span><span class="n">final_act</span><span class="p">,</span>
@@ -15618,7 +15546,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>/home/islab/miniconda3/envs/lab/lib/python3.7/site-packages/torch/nn/modules/rnn.py:51: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.5 and num_layers=1
+<pre>/home/tori/anaconda3/envs/flower3/lib/python3.7/site-packages/torch/nn/modules/rnn.py:65: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.5 and num_layers=1
   &#34;num_layers={}&#34;.format(dropout, num_layers))
 </pre>
 </div>
@@ -15633,7 +15561,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">init_model</span><span class="p">(</span><span class="n">model</span><span class="p">):</span>
@@ -15661,7 +15589,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">init_model</span><span class="p">(</span><span class="n">model</span><span class="p">)</span>
@@ -15677,7 +15605,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Optimizer</span><span class="p">:</span>
@@ -15726,7 +15654,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[30]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">optimizer</span> <span class="o">=</span> <span class="n">Optimizer</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">parameters</span><span class="p">(),</span> <span class="n">optimizer_type</span><span class="o">=</span><span class="n">optimizer_type</span><span class="p">,</span> <span class="n">lr</span><span class="o">=</span><span class="n">lr</span><span class="p">,</span> <span class="n">weight_decay</span><span class="o">=</span><span class="n">weight_decay</span><span class="p">,</span> <span class="n">momentum</span><span class="o">=</span><span class="n">momentum</span><span class="p">,</span> <span class="n">eps</span><span class="o">=</span><span class="n">eps</span><span class="p">)</span>
@@ -15742,7 +15670,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[31]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_recall</span><span class="p">(</span><span class="n">indices</span><span class="p">,</span> <span class="n">targets</span><span class="p">):</span> <span class="c1">#recall --&gt; wether next item in session is within top K=20 recommended items or not</span>
@@ -15773,7 +15701,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[32]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_mrr</span><span class="p">(</span><span class="n">indices</span><span class="p">,</span> <span class="n">targets</span><span class="p">):</span> <span class="c1">#Mean Receiprocal Rank --&gt; Average of rank of next item in the session.</span>
@@ -15805,10 +15733,10 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[33]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">evaluate</span><span class="p">(</span><span class="n">indices</span><span class="p">,</span> <span class="n">targets</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">10</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">evaluate</span><span class="p">(</span><span class="n">indices</span><span class="p">,</span> <span class="n">targets</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">5</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Evaluates the model using Recall@K, MRR@K scores.</span>
 
@@ -15836,11 +15764,11 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[34]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Evaluation</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <span class="n">loss_func</span><span class="p">,</span> <span class="n">use_cuda</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">10</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <span class="n">loss_func</span><span class="p">,</span> <span class="n">use_cuda</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">5</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">model</span> <span class="o">=</span> <span class="n">model</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">loss_func</span> <span class="o">=</span> <span class="n">loss_func</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">topk</span> <span class="o">=</span> <span class="n">k</span>
@@ -15886,7 +15814,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[35]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Trainer</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
@@ -15896,7 +15824,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
         <span class="bp">self</span><span class="o">.</span><span class="n">eval_data</span> <span class="o">=</span> <span class="n">eval_data</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">optim</span> <span class="o">=</span> <span class="n">optim</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">loss_func</span> <span class="o">=</span> <span class="n">loss_func</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">evaluation</span> <span class="o">=</span> <span class="n">Evaluation</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">loss_func</span><span class="p">,</span> <span class="n">use_cuda</span><span class="p">,</span> <span class="n">k</span> <span class="o">=</span> <span class="mi">10</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">evaluation</span> <span class="o">=</span> <span class="n">Evaluation</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">loss_func</span><span class="p">,</span> <span class="n">use_cuda</span><span class="p">,</span> <span class="n">k</span> <span class="o">=</span> <span class="mi">5</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">device</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">device</span><span class="p">(</span><span class="s1">&#39;cuda&#39;</span> <span class="k">if</span> <span class="n">use_cuda</span> <span class="k">else</span> <span class="s1">&#39;cpu&#39;</span><span class="p">)</span>
         <span class="c1">#self.device = torch.device(&#39;cpu&#39;)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">batch_size</span> <span class="o">=</span> <span class="n">batch_size</span>
@@ -15969,7 +15897,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[36]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">trainer</span> <span class="o">=</span> <span class="n">Trainer</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">train_data</span><span class="o">=</span><span class="n">train_data</span><span class="p">,</span> <span class="n">eval_data</span><span class="o">=</span><span class="n">valid_data</span><span class="p">,</span> <span class="n">optim</span><span class="o">=</span><span class="n">optimizer</span><span class="p">,</span> <span class="n">use_cuda</span><span class="o">=</span><span class="n">cuda</span><span class="p">,</span> <span class="n">loss_func</span><span class="o">=</span><span class="n">loss_function</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="n">batch_size</span><span class="p">)</span>
@@ -15985,7 +15913,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[37]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;#### START TRAINING....&#39;</span><span class="p">)</span>
@@ -16024,16 +15952,8 @@ Start Epoch # 0
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre> 66%|████████████████████████▎            | 11745/17859 [13:11&lt;06:52, 14.84it/s]
- 66%|█████████████████████████▋             | 2947/4473 [00:33&lt;00:17, 87.86it/s]
-/home/islab/miniconda3/envs/lab/lib/python3.7/site-packages/torch/serialization.py:292: UserWarning: Couldn&#39;t retrieve source code for container of type GRU4REC. It won&#39;t be checked for correctness upon loading.
-  &#34;type &#34; + obj.__name__ + &#34;. It won&#39;t be checked &#34;
-/home/islab/miniconda3/envs/lab/lib/python3.7/site-packages/torch/serialization.py:292: UserWarning: Couldn&#39;t retrieve source code for container of type Linear. It won&#39;t be checked for correctness upon loading.
-  &#34;type &#34; + obj.__name__ + &#34;. It won&#39;t be checked &#34;
-/home/islab/miniconda3/envs/lab/lib/python3.7/site-packages/torch/serialization.py:292: UserWarning: Couldn&#39;t retrieve source code for container of type Tanh. It won&#39;t be checked for correctness upon loading.
-  &#34;type &#34; + obj.__name__ + &#34;. It won&#39;t be checked &#34;
-/home/islab/miniconda3/envs/lab/lib/python3.7/site-packages/torch/serialization.py:292: UserWarning: Couldn&#39;t retrieve source code for container of type GRU. It won&#39;t be checked for correctness upon loading.
-  &#34;type &#34; + obj.__name__ + &#34;. It won&#39;t be checked &#34;
+<pre> 66%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                                         | 11745/17859 [00:18&lt;00:09, 625.93it/s]
+ 66%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                                                         | 2947/4473 [00:02&lt;00:01, 1293.24it/s]
 </pre>
 </div>
 </div>
@@ -16045,7 +15965,7 @@ Start Epoch # 0
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Epoch: 0, train loss: 0.0147, loss: 0.0157, recall: 0.0351, mrr: 0.0217, time: 825.2630684375763
+<pre>Epoch: 0, train loss: 0.0139, loss: 0.0146, recall: 0.5930, mrr: 0.5227, time: 21.0606906414032
 Save model as checkpoint/model_00000.pt
 Start Epoch # 1
 </pre>
@@ -16059,8 +15979,8 @@ Start Epoch # 1
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre> 66%|████████████████████████▎            | 11745/17859 [13:10&lt;06:51, 14.86it/s]
- 66%|█████████████████████████▋             | 2947/4473 [00:34&lt;00:17, 86.36it/s]
+<pre> 66%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                                         | 11745/17859 [00:18&lt;00:09, 639.69it/s]
+ 66%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                                                         | 2947/4473 [00:02&lt;00:01, 1334.60it/s]
 </pre>
 </div>
 </div>
@@ -16072,7 +15992,7 @@ Start Epoch # 1
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Epoch: 1, train loss: 0.0137, loss: 0.0158, recall: 0.0284, mrr: 0.0167, time: 824.6891975402832
+<pre>Epoch: 1, train loss: 0.0139, loss: 0.0146, recall: 0.5929, mrr: 0.5307, time: 20.578992128372192
 Save model as checkpoint/model_00001.pt
 Start Epoch # 2
 </pre>
@@ -16086,8 +16006,8 @@ Start Epoch # 2
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre> 66%|████████████████████████▎            | 11745/17859 [13:09&lt;06:51, 14.87it/s]
- 66%|█████████████████████████▋             | 2947/4473 [00:34&lt;00:17, 85.98it/s]
+<pre> 66%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                                         | 11745/17859 [00:18&lt;00:09, 636.71it/s]
+ 66%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                                                         | 2947/4473 [00:02&lt;00:01, 1291.19it/s]
 </pre>
 </div>
 </div>
@@ -16099,7 +16019,7 @@ Start Epoch # 2
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Epoch: 2, train loss: 0.0133, loss: 0.0159, recall: 0.0282, mrr: 0.0165, time: 824.1854999065399
+<pre>Epoch: 2, train loss: 0.0139, loss: 0.0146, recall: 0.5929, mrr: 0.5338, time: 20.73942255973816
 Save model as checkpoint/model_00002.pt
 Start Epoch # 3
 </pre>
@@ -16113,8 +16033,8 @@ Start Epoch # 3
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre> 66%|████████████████████████▎            | 11745/17859 [13:09&lt;06:51, 14.87it/s]
- 66%|█████████████████████████▋             | 2947/4473 [00:34&lt;00:17, 85.09it/s]
+<pre> 66%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                                         | 11745/17859 [00:18&lt;00:09, 631.75it/s]
+ 66%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                                                         | 2947/4473 [00:02&lt;00:01, 1337.97it/s]
 </pre>
 </div>
 </div>
@@ -16126,7 +16046,7 @@ Start Epoch # 3
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Epoch: 3, train loss: 0.0131, loss: 0.0159, recall: 0.0304, mrr: 0.0180, time: 824.5830206871033
+<pre>Epoch: 3, train loss: 0.0139, loss: 0.0146, recall: 0.5926, mrr: 0.5345, time: 20.80331039428711
 Save model as checkpoint/model_00003.pt
 Start Epoch # 4
 </pre>
@@ -16140,8 +16060,8 @@ Start Epoch # 4
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre> 66%|████████████████████████▎            | 11745/17859 [13:09&lt;06:51, 14.87it/s]
- 66%|█████████████████████████▋             | 2947/4473 [00:34&lt;00:17, 86.29it/s]
+<pre> 66%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                                         | 11745/17859 [00:18&lt;00:09, 636.59it/s]
+ 66%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                                                         | 2947/4473 [00:02&lt;00:01, 1332.69it/s]
 </pre>
 </div>
 </div>
@@ -16153,7 +16073,7 @@ Start Epoch # 4
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Epoch: 4, train loss: 0.0130, loss: 0.0159, recall: 0.0321, mrr: 0.0189, time: 824.2232646942139
+<pre>Epoch: 4, train loss: 0.0139, loss: 0.0146, recall: 0.5921, mrr: 0.5351, time: 20.671149730682373
 Save model as checkpoint/model_00004.pt
 Start Epoch # 5
 </pre>
@@ -16167,8 +16087,8 @@ Start Epoch # 5
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre> 66%|████████████████████████▎            | 11745/17859 [13:09&lt;06:51, 14.87it/s]
- 66%|█████████████████████████▋             | 2947/4473 [00:34&lt;00:17, 86.12it/s]
+<pre> 66%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                                         | 11745/17859 [00:18&lt;00:09, 634.29it/s]
+ 66%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                                                         | 2947/4473 [00:02&lt;00:01, 1302.30it/s]
 </pre>
 </div>
 </div>
@@ -16180,7 +16100,7 @@ Start Epoch # 5
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Epoch: 5, train loss: 0.0129, loss: 0.0159, recall: 0.0345, mrr: 0.0205, time: 824.2602109909058
+<pre>Epoch: 5, train loss: 0.0139, loss: 0.0146, recall: 0.5919, mrr: 0.5354, time: 20.78989028930664
 Save model as checkpoint/model_00005.pt
 Start Epoch # 6
 </pre>
@@ -16194,8 +16114,8 @@ Start Epoch # 6
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre> 66%|████████████████████████▎            | 11745/17859 [13:09&lt;06:51, 14.87it/s]
- 66%|█████████████████████████▋             | 2947/4473 [00:34&lt;00:17, 85.97it/s]
+<pre> 66%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                                         | 11745/17859 [00:18&lt;00:09, 624.69it/s]
+ 66%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                                                         | 2947/4473 [00:02&lt;00:01, 1173.39it/s]
 </pre>
 </div>
 </div>
@@ -16207,7 +16127,7 @@ Start Epoch # 6
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Epoch: 6, train loss: 0.0128, loss: 0.0159, recall: 0.0359, mrr: 0.0213, time: 824.2138323783875
+<pre>Epoch: 6, train loss: 0.0139, loss: 0.0146, recall: 0.5919, mrr: 0.5359, time: 21.32249355316162
 Save model as checkpoint/model_00006.pt
 Start Epoch # 7
 </pre>
@@ -16221,8 +16141,8 @@ Start Epoch # 7
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre> 66%|████████████████████████▎            | 11745/17859 [13:09&lt;06:51, 14.87it/s]
- 66%|█████████████████████████▋             | 2947/4473 [00:34&lt;00:17, 85.88it/s]
+<pre> 66%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                                         | 11745/17859 [00:18&lt;00:09, 628.85it/s]
+ 66%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                                                         | 2947/4473 [00:02&lt;00:01, 1317.95it/s]
 </pre>
 </div>
 </div>
@@ -16234,7 +16154,7 @@ Start Epoch # 7
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Epoch: 7, train loss: 0.0128, loss: 0.0159, recall: 0.0375, mrr: 0.0224, time: 824.2780950069427
+<pre>Epoch: 7, train loss: 0.0139, loss: 0.0146, recall: 0.5919, mrr: 0.5361, time: 20.92303705215454
 Save model as checkpoint/model_00007.pt
 Start Epoch # 8
 </pre>
@@ -16248,8 +16168,8 @@ Start Epoch # 8
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre> 66%|████████████████████████▎            | 11745/17859 [13:09&lt;06:51, 14.87it/s]
- 66%|█████████████████████████▋             | 2947/4473 [00:34&lt;00:17, 85.39it/s]
+<pre> 66%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                                         | 11745/17859 [00:18&lt;00:09, 630.76it/s]
+ 66%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                                                         | 2947/4473 [00:02&lt;00:01, 1286.65it/s]
 </pre>
 </div>
 </div>
@@ -16261,7 +16181,7 @@ Start Epoch # 8
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Epoch: 8, train loss: 0.0128, loss: 0.0159, recall: 0.0384, mrr: 0.0229, time: 824.363254070282
+<pre>Epoch: 8, train loss: 0.0139, loss: 0.0146, recall: 0.5920, mrr: 0.5362, time: 20.92066502571106
 Save model as checkpoint/model_00008.pt
 Start Epoch # 9
 </pre>
@@ -16275,9 +16195,8 @@ Start Epoch # 9
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre> 66%|████████████████████████▎            | 11745/17859 [13:09&lt;06:51, 14.87it/s]
- 66%|█████████████████████████▋             | 2947/4473 [00:33&lt;00:17, 87.06it/s]
-</pre>
+<pre> 66%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                                         | 11745/17859 [00:18&lt;00:09, 634.27it/s]
+ 66%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                                                         | 2947/4473 [00:02&lt;00:01, 1280.23it/s]</pre>
 </div>
 </div>
 
@@ -16288,10 +16207,77 @@ Start Epoch # 9
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Epoch: 9, train loss: 0.0127, loss: 0.0159, recall: 0.0394, mrr: 0.0236, time: 823.8568801879883
+<pre>Epoch: 9, train loss: 0.0139, loss: 0.0146, recall: 0.5921, mrr: 0.5364, time: 20.829195976257324
 Save model as checkpoint/model_00009.pt
 </pre>
 </div>
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
+<pre>
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[30]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s1">&#39;jupyter nbconvert --to html gru4rec-CategoryRecommendation.ipynb&#39;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
+<pre>[NbConvertApp] Converting notebook gru4rec-CategoryRecommendation.ipynb to html
+[NbConvertApp] Writing 699387 bytes to gru4rec-CategoryRecommendation.html
+</pre>
+</div>
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[30]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>0</pre>
+</div>
+
 </div>
 
 </div>
