@@ -1,0 +1,4 @@
+1. Run the preprocess_jd.ipynb 
+2. Run in terminal preprocess.py --dataset jd
+3. Run count_jd.ipynb and take note of the number
+4. Now we can go to the main code
